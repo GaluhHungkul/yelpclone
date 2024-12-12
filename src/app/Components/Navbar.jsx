@@ -3,10 +3,13 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
+import useUserInfo from '@/zustand/useUserInfo'
 
 const Navbar = () => {
 
     const pathname = usePathname()
+
+    const {dataUser} = useUserInfo()
 
     const isLogin = localStorage.getItem('isLogin')
 
@@ -42,8 +45,7 @@ const Navbar = () => {
                             <div className='relative mx-auto mb-2 bg-black rounded-full size-10'>
 
                             </div>
-                            <h1>Username : </h1>
-                            <h1>Email : </h1>
+                            <h1 className='capitalize'>Username : {dataUser.username}</h1>
                             <button onClick={handleLogOut} className='absolute px-4 py-1 font-bold text-white duration-300 translate-x-1/2 bg-black border-2 border-black rounded bottom-2 right-1/2 hover:bg-white hover:text-black '>Log Out</button>
                     </div>}
                 </>}

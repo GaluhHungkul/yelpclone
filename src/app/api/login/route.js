@@ -8,8 +8,6 @@ export async function POST(request) {
     const bcrypt = require('bcrypt')
 
 
-
-
     try {
         
         await ConnectionToDatabase()
@@ -24,7 +22,7 @@ export async function POST(request) {
                 return NextResponse.json({
                     OK : true,
                     message : 'data asli',
-                    user : currUser  
+                    userId : currUser._id  
                 })
             } else {
                 return NextResponse.json({

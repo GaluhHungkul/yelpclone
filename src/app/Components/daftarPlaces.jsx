@@ -2,24 +2,32 @@
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-
+import useUserInfo from '@/zustand/useUserInfo'
 
 
 const DaftarPlaces = ({children}) => {
 
   const [places, setPlaces] = useState([]) 
 
+  const {setDataUser, dataUser} = useUserInfo()
+
   const isLogin = localStorage.getItem('isLogin')
 
   useEffect(() => {
 
     const getDataPlaces = async () => {
-      const res = await fetch('/api/places')
+      const currUserId = '675a86f50f040f6ac655ce90'
+      const res = currUserId ?   await fetch(`/api/places/user/${currUserId}`) : await fetch(`/api/places`)
       const results = await res.json()
       console.log(results)
       setPlaces(results.data)
+      setDataUser(results.user)
+      console.log(results.user)
+      
     }
 
+
+    
     getDataPlaces()
 
   },[])
