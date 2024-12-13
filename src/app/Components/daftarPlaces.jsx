@@ -22,7 +22,7 @@ const DaftarPlaces = ({children}) => {
       console.log(results)
       setPlaces(results.data)
       setDataUser(results.user)
-      console.log(results.user)
+      console.log(results.user) 
       
     }
 
