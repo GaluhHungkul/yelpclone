@@ -37,7 +37,8 @@ const LoginPage = () => {
       
       setWrongAccount(false)
       localStorage.setItem('isLogin', 'true')
-      localStorage.setItem('userId', res.userId._id)
+      localStorage.setItem('userId', res?.userId)
+      
       console.log(res)
 
       

@@ -9,7 +9,7 @@ const DetailPage = () => {
     const params = useParams()
     const id = params.id
     
-  
+    console.log(localStorage)
 
     const [place, setPlace] = useState({})
 
@@ -26,7 +26,7 @@ const DetailPage = () => {
       })
       redirect('/')
     }
-    const currUserId = '675a86f50f040f6ac655ce90'
+    const currUserId = localStorage.getItem('userId')
     console.log(place)
 
     useEffect(() => {
@@ -92,7 +92,7 @@ const DetailPage = () => {
             </form>
           </div> }
           <div className='flex flex-col w-full gap-4 mt-10 min-h-52'>
-              {place?.komentar?.map((item,index) => (
+              {place?.komentar?.length ?  place?.komentar?.map((item,index) => (
                 <div key={index} className='relative flex items-center h-20 gap-5 px-10 border rounded'>
                     <h1 className='absolute text-sm top-1 right-4 hover:text-slate-400'>{item.formattedDate}</h1>
                     <div className='absolute bg-white rounded-full size-12'>
@@ -103,7 +103,7 @@ const DetailPage = () => {
                       <h1>{item.message}</h1> 
                     </div>
                 </div>
-              ))}
+              )) : <h1 className='text-2xl font-bold text-center'>Belum ada komentar</h1>}
           </div>
         </div>
     </div> 

@@ -1,0 +1,27 @@
+"filename", "language", "JavaScript JSX", "CSS", "JavaScript", "comment", "blank", "total"
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\Components\Navbar.jsx", "JavaScript JSX", 44, 0, 0, 0, 14, 58
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\Components\daftarPlaces.jsx", "JavaScript JSX", 42, 0, 0, 0, 17, 59
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\Components\landingpage.jsx", "JavaScript JSX", 11, 0, 0, 0, 2, 13
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\about\page.jsx", "JavaScript JSX", 7, 0, 0, 0, 2, 9
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\addPlace\route.js", "JavaScript", 0, 0, 25, 0, 7, 32
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\login\route.js", "JavaScript", 0, 0, 31, 0, 14, 45
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\[id]\change\route.js", "JavaScript", 0, 0, 17, 0, 6, 23
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\[id]\delete\route.js", "JavaScript", 0, 0, 22, 0, 6, 28
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\[id]\komentar\route.js", "JavaScript", 0, 0, 40, 2, 15, 57
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\[id]\route.js", "JavaScript", 0, 0, 14, 0, 5, 19
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\[id]\user\[userId]\route.js", "JavaScript", 0, 0, 17, 0, 5, 22
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\route.js", "JavaScript", 0, 0, 16, 0, 7, 23
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\places\user\[id]\route.js", "JavaScript", 0, 0, 20, 0, 11, 31
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\register\route.js", "JavaScript", 0, 0, 32, 0, 7, 39
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\api\users\route.js", "JavaScript", 0, 0, 20, 0, 2, 22
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\contactus\page.jsx", "JavaScript JSX", 7, 0, 0, 0, 2, 9
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\globals.css", "CSS", 0, 18, 0, 0, 4, 22
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\layout.jsx", "JavaScript JSX", 16, 0, 0, 0, 7, 23
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\login\page.jsx", "JavaScript JSX", 48, 0, 0, 0, 20, 68
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\page.jsx", "JavaScript JSX", 10, 0, 0, 0, 7, 17
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\partnership\page.jsx", "JavaScript JSX", 7, 0, 0, 0, 2, 9
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\places\[id]\edit\page.jsx", "JavaScript JSX", 61, 0, 0, 1, 14, 76
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\places\[id]\page.jsx", "JavaScript JSX", 94, 0, 0, 0, 19, 113
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\places\create\page.jsx", "JavaScript JSX", 40, 0, 0, 0, 7, 47
+"c:\Users\le nopo\Coding\next js\next-mongoose-approuter\src\app\register\page.jsx", "JavaScript JSX", 43, 0, 0, 0, 15, 58
+"Total", "-", 430, 18, 254, 3, 217, 922

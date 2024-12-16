@@ -19,6 +19,8 @@ export async function POST(request) {
             const isMatch = await bcrypt.compare(password, currUser.password)
           
             if(isMatch) {
+
+
                 return NextResponse.json({
                     OK : true,
                     message : 'data asli',

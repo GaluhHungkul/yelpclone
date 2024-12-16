@@ -13,11 +13,13 @@ const DaftarPlaces = ({children}) => {
 
   const isLogin = localStorage.getItem('isLogin')
 
+  const userId = localStorage.getItem('userId')
+
   useEffect(() => {
 
     const getDataPlaces = async () => {
-      const currUserId = '675a86f50f040f6ac655ce90'
-      const res = currUserId ?   await fetch(`/api/places/user/${currUserId}`) : await fetch(`/api/places`)
+     
+      const res =  await fetch(`/api/places/user/${userId}`) 
       const results = await res.json()
       console.log(results)
       setPlaces(results.data)
