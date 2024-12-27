@@ -4,12 +4,16 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import useUserInfo from '@/zustand/useUserInfo'
+import { useRouter } from 'next/navigation'
+
 
 const Navbar = () => {
 
     const pathname = usePathname()
 
     const {dataUser} = useUserInfo()
+
+    const router = useRouter()
 
     const isLogin = localStorage.getItem('isLogin')
 
@@ -18,12 +22,13 @@ const Navbar = () => {
     const handleLogOut = () => {
         localStorage.removeItem('isLogin')
         setShowProfile(false)
+        router.push('/')        
     }
         
     
 
   return (
-    <div className='sticky top-0 z-10 flex items-center justify-between h-16 bg-black border-b'>
+    <div className='sticky top-0 z-10 flex items-center justify-between h-16 bg-black '>
         <Link href="/" className='ml-10 text-2xl font-bold text-white'>Yelp<span className='text-blue-500'>Clone</span></Link>
         <div className='flex items-center justify-between w-2/5 '>            
             <ul className='flex items-center justify-between text-lg font-semibold w-80'>

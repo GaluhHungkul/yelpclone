@@ -10,6 +10,8 @@ const RegisterPage = () => {
   const [password, setPassword] = useState('')
   const [verifikasiPass, setVerifikasiPass] = useState('')
 
+  const [loading, setLoading] = useState(false)
+
   const router = useRouter()
 
   useEffect(() => {
@@ -18,6 +20,9 @@ const RegisterPage = () => {
 
   const handleSubmit = async e => {
     e.preventDefault()
+
+    setLoading(true)
+
     const {username, password} = e.target
 
       const kirim = await fetch('/api/register', {
@@ -33,7 +38,7 @@ const RegisterPage = () => {
       const res = await kirim.json()
       console.log(res)
       if(res.OK) router.push('/login')
-         
+      setLoading(false) 
 
   }
 
@@ -49,7 +54,7 @@ const RegisterPage = () => {
             {verifikasiPass && verifikasiPass != password && <span className='my-3 ml-10 text-red-500'>Password berbeda!</span>}
           </div>
         </div>
-        <button className='absolute w-4/5 py-1 font-bold text-black duration-200 bg-white border rounded bottom-20 hover:bg-black hover:text-white active:bg-white active:text-black' type="submit" disabled={verifikasiPass !== password}>Register!</button>
+        <button  className='absolute w-4/5 py-1 font-bold text-black duration-200 bg-white border rounded bottom-20 hover:bg-black hover:text-white active:bg-white active:text-black' type="submit" disabled={verifikasiPass !== password || loading}>{loading ? 'Mengirim data...' : 'Register!'}</button>
       </form>
     
   )

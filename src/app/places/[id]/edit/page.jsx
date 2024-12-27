@@ -23,9 +23,9 @@ const EditDetailPage = () => {
     useEffect(() => {
 
         const fetchData = async () => {
-            if(localStorage.getItem('isLogin') !== 'true')  {
-                router.push('/')
-            }
+            // if(localStorage.getItem('isLogin') !== 'true')  {
+            //     router.push('/')
+            // }
             const res = await fetch(`/api/places/${id}`)
             const result = await res.json()
             console.log(result)

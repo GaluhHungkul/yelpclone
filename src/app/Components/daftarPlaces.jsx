@@ -21,10 +21,10 @@ const DaftarPlaces = ({children}) => {
      
       const res =  await fetch(`/api/places/user/${userId}`) 
       const results = await res.json()
-      console.log(results)
+      
       setPlaces(results.data)
       setDataUser(results.user)
-      console.log(results.user) 
+      
       
     }
 
