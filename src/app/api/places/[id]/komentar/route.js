@@ -27,8 +27,6 @@ export async function POST(req, {params}) {
             minute: "2-digit",
         });
 
-
-
         const datedKomentar = {
             user,
             message,

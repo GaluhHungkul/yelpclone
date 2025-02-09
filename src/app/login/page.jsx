@@ -61,7 +61,7 @@ const LoginPage = () => {
         </div>
         {wrongAccount && <h1 className='absolute font-bold text-red-500 top-1/2 '>Terdapat kesalahan dalam pengisian form</h1>}
         <p className='absolute font-semibold text-white bottom-36'>Belum Punya Akun? <Link className='text-blue-500' href='/register'>Buat disini</Link> </p>
-        <button disabled={loading} className='absolute w-4/5 py-1 font-bold text-black duration-200 bg-white border rounded bottom-20 hover:bg-black hover:text-white active:bg-white active:text-black disabled:bg-black' type="submit">{loading ? 'Mengirim data...' : 'KIRIM'}</button>
+        <button disabled={loading} className='absolute w-4/5 py-1 font-bold text-black duration-200 bg-white border rounded bottom-20 hover:bg-black hover:text-white active:bg-white active:text-black disabled:bg-black disabled:text-white' type="submit">{loading ? 'Mengirim data...' : 'KIRIM'}</button>
       </form>
     
   )

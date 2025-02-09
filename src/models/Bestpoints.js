@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { stringifyUseCacheCacheStore } from "next/dist/server/resume-data-cache/cache-store";
 
 const komentarSchema = mongoose.Schema({
     user : {

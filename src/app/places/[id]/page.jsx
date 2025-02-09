@@ -60,7 +60,7 @@ const DetailPage = () => {
       const result = await res.json()
       console.log(result)
       e.target.komentar.value = ''
-
+      window.location.reload()
     }
 
   return (
